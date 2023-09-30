@@ -34,6 +34,6 @@ locals {
   zone-2           = "ru-central1-b"
   zone-3           = "ru-central1-c"
   
-  vm_public_name   = "public-vm"
+  vm_public_name   = "public-v1"
   vm_image_id      = "fd8t08ih94rivuk5q46j" # ubuntu-2004-lts
 }
