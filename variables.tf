@@ -7,10 +7,12 @@ variable "token" {
 
 variable "cloud_id" {
   type = string
+  default = ""
 } # export YC_CLOUD_ID="YOUR_YC_CLOUD_ID"
 
 variable "folder_id" {
   type = string
+  default = ""
 } # export YC_FOLDER_ID="YOUR_YC_FOLDER_ID"
 
 
