@@ -26,7 +26,6 @@ provider "yandex" {
   
 }
 
-
 resource "yandex_compute_instance" "vm-1" {
 name = "test-atlantis"
 zone = "ru-central1-c"
