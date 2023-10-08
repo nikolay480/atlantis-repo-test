@@ -25,7 +25,6 @@ provider "yandex" {
   
 }
 
-
 # terraform {
 #   required_providers {
 #     yandex = {
