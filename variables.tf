@@ -3,17 +3,18 @@
 variable "token" {
   type = string
   default = ""
-} # export YC_TOKEN="YOUR_YC_TOKEN"
+  description = "from env: export YC_TOKEN=$(yc iam create-token)"
+} 
 
 variable "cloud_id" {
   type = string
-  default = ""
-} # export YC_CLOUD_ID="YOUR_YC_CLOUD_ID"
+  description = "from env: export TF_VAR_cloud_id=$(yc config get cloud-id)"
+}
 
 variable "folder_id" {
   type = string
-  default = ""
-} # export YC_FOLDER_ID="YOUR_YC_FOLDER_ID"
+  description = "from env: export TF_VAR_folder_id=$(yc config get folder-id)"
+} 
 
 
 variable "vm_user" {
