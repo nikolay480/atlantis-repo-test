@@ -3,7 +3,7 @@
 
 resource "yandex_compute_instance_group" "control-plane" {
   name                = "k8s-control-plane"
-  # folder_id           = var.folder_id
+  folder_id           = var.folder_id
   service_account_id  = data.yandex_iam_service_account.sa.id
   deletion_protection = false # защита_от_удаления:_true_или_false
  
@@ -59,7 +59,7 @@ resource "yandex_compute_instance_group" "control-plane" {
 #================== -WORKERS- =========================
 resource "yandex_compute_instance_group" "worker-nodes" {
   name                = "k8s-workers"
-  # folder_id           = var.folder_id
+  folder_id           = var.folder_id
   service_account_id  = data.yandex_iam_service_account.sa.id
   deletion_protection = false # защита_от_удаления:_true_или_false
  
