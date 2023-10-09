@@ -1,10 +1,10 @@
 # Declaring variables for user-defined parameters
 
-variable "token" {
-  type = string
-  default = "y0_AgAAAABlxVV0AATuwQAAAADT2IR01JfYAAbMTr-6_qc2eFMMWEu2T-Y"
-  description = "from env: export YC_TOKEN=$(yc iam create-token)"
-} 
+# variable "token" {
+#   type = string
+# 
+#   description = "from env: export YC_TOKEN=$(yc iam create-token)"
+# } 
 
 variable "cloud_id" {
   type = string
