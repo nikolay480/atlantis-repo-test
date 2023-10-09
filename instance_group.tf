@@ -50,6 +50,7 @@ resource "yandex_compute_instance_group" "control-plane" {
       local.zone-3
     ]
   }
+  
   deploy_policy {
     max_unavailable = 1
     max_expansion   = 0
