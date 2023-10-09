@@ -22,7 +22,7 @@ terraform {
 provider "yandex" {
   folder_id                = var.folder_id
   cloud_id                 = var.cloud_id
-  
+  token                    = var.token
 }
 
 # terraform {

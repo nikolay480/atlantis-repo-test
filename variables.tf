@@ -2,17 +2,19 @@
 
 variable "token" {
   type = string
-  default = ""
+  default = "y0_AgAAAABlxVV0AATuwQAAAADT2IR01JfYAAbMTr-6_qc2eFMMWEu2T-Y"
   description = "from env: export YC_TOKEN=$(yc iam create-token)"
 } 
 
 variable "cloud_id" {
   type = string
+  default = "b1gso2vle70451bc3egm"
   description = "from env: export TF_VAR_cloud_id=$(yc config get cloud-id)"
 }
 
 variable "folder_id" {
   type = string
+  default = "b1ga4u00jltahn3l6fp9"
   description = "from env: export TF_VAR_folder_id=$(yc config get folder-id)"
 } 
 
